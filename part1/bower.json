@@ -1,0 +1,12 @@
+{
+  "name": "myApp",
+  "homepage": "https://github.com/sib0rg/playground",
+  "description": "part 1",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-mocks": "^1.5.0"
+  }
+}

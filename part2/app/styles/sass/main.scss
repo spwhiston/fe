@@ -1,0 +1,25 @@
+@import 'vars.scss';
+@import 'reset.scss';
+@import 'typography.scss';
+@import 'mixins.scss';
+@import 'components.scss';
+@import 'rwd.scss';
+
+.grid-container { 
+	position:relative;
+	margin: 0 auto;
+	max-width:$desktop-view-port;
+	display: table;
+	content: " ";  		
+	.row {
+		width:100%;
+		display: table;
+		content: " ";		
+	}
+	div[class^="col-lg"],
+	div[class^="col-sm"] {
+		float:left;
+	} 
+	@include genCols(col-lg-);
+}
+ 

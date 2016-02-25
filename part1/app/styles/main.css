@@ -1,0 +1,16 @@
+img.selected {
+	border:10px dashed red;
+}
+.flickr-photos {
+	display: flex;
+	flex-flow: row wrap;
+}
+.photo {
+	display: flex;
+	flex: 0 1 20%;	
+	position: relative;
+}
+img {
+	border:10px solid #FFFFFF;
+	cursor:pointer;
+}

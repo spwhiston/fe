@@ -1,0 +1,10 @@
+@mixin genCols($name) {
+	$i : 1;
+	$columns: 12;
+
+	@for $i from 1 through $columns {
+		.#{$name}#{$i} {
+			width: ((100/$columns) * $i) * 1%;
+		}
+	}
+}

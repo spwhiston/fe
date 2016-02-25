@@ -1,0 +1,65 @@
+@media only screen and (max-width:$mobile-view-port) {
+	.grid-container { 
+		@include genCols(col-sm-);
+		
+		div[class^="col-lg"] {
+			width:100%;
+		}
+
+		img.logo {
+			width:50%;
+			height:auto;
+			margin:0 auto;
+			display:block;
+			padding:$gutter;
+		}
+		.social-panel {
+			padding:0px;
+			position:static;
+			margin:0 auto;
+			width:75%;
+		}
+		.menu-toggle {
+			display:block;
+		}
+		.top-menu {
+			display:none;
+			width:100%;
+			&.show {
+				display:block;
+			}
+			li {
+				a {
+					padding:10px;
+					display:block;
+					margin-bottom:5px;
+				}
+			}
+		}
+		.aside {
+			width:100%;
+			padding:0px;
+			
+		}
+
+		.article {
+			.content {
+				position:relative;
+				padding-bottom:100px;
+			}
+			.aside {
+				position:absolute;
+				bottom:0px;
+			}
+		}
+
+		.sidebar {
+			h3 {
+				font-size:16px;
+				line-height:16px;
+			}
+		}
+
+
+	}
+}

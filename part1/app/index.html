@@ -1,0 +1,18 @@
+<html ng-app="myApp">
+	<head>
+		<title>FE - Part one</title>
+		<link rel="stylesheet" href="styles/main.css" />
+	</head>
+	<body ng-controller="flickrGalleryController as vm">
+		<div class="flickr-photos">
+			<div class="flickr-photo" ng-repeat="photo in vm.photos">
+				<img ng-class="{'selected':photo.selected}" ng-click="vm.selectPhoto(photo)" src="{{photo.media.m}}" />
+			</div>
+		</div>
+		<script src="../bower_components/angular/angular.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/appCacheFactory.js"></script>
+		<script src="js/flickrFactory.js"></script>
+		<script src="js/flickrGalleryController.js"></script>
+	</body>
+</html>

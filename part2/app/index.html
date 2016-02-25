@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>FE - Part Two</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="./styles/css/main.css" />
+	</head>
+	<body>
+
+		<div class="grid-container">			
+			<div class="row header">
+				<div class="col-lg-1">
+					<img src="images/logo.png" class="logo" />
+				</div>
+				<div class="col-lg-11">
+					<h1 class="main-header">Ipsum lorem</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="menu-toggle" onClick="toggleClass()">Menu</span>
+					<ul class="top-menu" id="topMenu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">eBooks</a></li>
+						<li><a href="#">Magazines</a></li>
+						<li><a href="#">Movies</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Login</a></li>							
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="article">
+						<div class="header">
+							<h2>Lorem Ipsum Dolor Sit</h2>
+							<span>posted on 15 May 2015 by <a href="#">Author</a></span>
+						</div>
+						<img class="main" src="http://farm2.staticflickr.com/1481/25240182715_588f9c0c45_m.jpg" alt="" />
+						<div class="content">		
+
+						<div class="aside">
+							<h4>More...</h4>
+							<ul class="sub-menu"> 
+								<li><a href="#">Link #1</a></li>
+								<li><a href="#">Another link</a></li>
+								<li><a href="#">Third link</a></li>
+							</ul>
+						</div>								
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam fermentum. Integer fringilla. Integer fringilla. Pellentesque ac turpis. Sed elementum, felis quis porttitor sollicitudin, augue nulla sodales sapien, amet posuere quam purus at lacus. Nam id neque. Morbi pulvinar nulla sit amet nisl. Etiam pharetra lacus sed velit imperdiet bibendum.
+								
+							</p>
+							<p>Sed quis elit. In hac habitasse platea dictumst. Maecenas justo. Donec interdum vestibulum libero. Nam laoreet dui sed magna. Nam consectetuer mollis dolor. Aenean ligula. Aliquam sed erat. Donec interdum vestibulum libero. Mauris et dolor</p>
+						</div>	
+					</div>
+					<div class="article">
+						<div class="header">
+							<h2>Lorem Ipsum Dolor Sit</h2>
+							<span>posted on 15 May 2015 by <a href="#">Author</a></span>
+						</div>
+						<div class="content">
+							<img class="main" src="http://farm2.staticflickr.com/1481/25240182715_588f9c0c45_m.jpg" alt="" />
+							<p>
+								<div class="aside">
+									<h4>More...</h4>
+									<ul class="sub-menu">
+										<li><a href="#">Link #1</a></li>
+										<li><a href="#">Another link</a></li>
+										<li><a href="#">Third link</a></li>
+									</ul>
+								</div>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam fermentum. Integer fringilla. Integer fringilla. Pellentesque ac turpis. Sed elementum, felis quis porttitor sollicitudin, augue nulla sodales sapien, amet posuere quam purus at lacus. Nam id neque. Morbi pulvinar nulla sit amet nisl. Etiam pharetra lacus sed velit imperdiet bibendum.</p>
+							<p>Sed quis elit. In hac habitasse platea dictumst. Maecenas justo. Donec interdum vestibulum libero. Nam laoreet dui sed magna. Nam consectetuer mollis dolor. Aenean ligula. Aliquam sed erat. Donec interdum vestibulum libero. Mauris et dolor</p>
+						</div>
+					</div>					
+				</div>
+				<div class="col-lg-4 sidebar">
+					<div class="col-sm-6">
+						<div class="article">
+							<h3>A guide to snoopsetting</h3>
+							<img class="main" src="http://farm2.staticflickr.com/1481/25240182715_588f9c0c45_m.jpg" />
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="article">
+							<h3>Welcome to the Surveillance State</h3>
+							<img class="main" src="http://farm2.staticflickr.com/1481/25240182715_588f9c0c45_m.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="social-panel">
+				<i class="fa fa-facebook-square"></i>
+				<i class="fa fa-twitter-square"></i>
+				<i class="fa fa-google-plus-square"></i>
+			</div>
+
+		</div>
+		<script>
+			function toggleClass() {
+				 var menu = document.getElementById('topMenu');
+				 menu.classList.toggle('show');
+			}
+		</script>
+	</body>
+</html>
